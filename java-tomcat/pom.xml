@@ -7,7 +7,26 @@
   <packaging>war</packaging>
   <name>embeddedTomcatSample Maven Webapp</name>
   <url>http://maven.apache.org</url>
+  <properties>
+    <tomcat.version>7.0.57</tomcat.version>
+  </properties>
+  <dependencies>
+   
+  </dependencies>
   <build>
-    <finalName>embeddedTomcatSample</finalName>  
+    <finalName>embeddedTomcatSample</finalName>
+  <plugins>
+      <plugin>
+        <artifactId>maven-war-plugin</artifactId>
+        <version>2.6</version>
+        <configuration>
+    
+          <packagingExcludes>
+            WEB-INF/lib/*.jar
+          </packagingExcludes>
+        </configuration>
+      </plugin>
+    </plugins>
+
   </build>
 </project>

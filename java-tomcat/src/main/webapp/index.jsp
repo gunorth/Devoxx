@@ -1,5 +1,5 @@
 <html>
     <body>
-        <h2>Hello Devoxx!</h2>
+        <h1>Hello Devoxx!</h1>
     </body>
 </html>
